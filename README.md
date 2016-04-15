@@ -1,5 +1,5 @@
 # experiments
-Some experiments
+Some experiments.
 
 # Avatars generator:
 * Starting with "java -jar jarname"
