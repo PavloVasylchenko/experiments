@@ -3,6 +3,8 @@
 
 # Maven
 target
+build
+.gradle
 
 # Eclipse
 .metadata
@@ -15,6 +17,7 @@ target
 #bin
 
 # IntelliJ IDEA
+.idea
 *.i??
 !*.ico
 *.jks

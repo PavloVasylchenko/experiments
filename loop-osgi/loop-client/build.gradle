@@ -1,0 +1,21 @@
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "org.osgi:org.osgi.core:6.0.0"
+    compile project(":loop-common")
+}
+
+jar {
+    manifest { // the manifest of the default jar is of type OsgiManifest
+        name = 'Loop Client'
+        instruction 'Export-Package', 'loop.client'
+        instruction 'Bundle-Vendor', 'MyCompany'
+        instruction 'Bundle-Description', 'Platform2: Metrics 2 Measures Framework'
+        instruction 'Bundle-Activator', 'loop.client.App'
+        instruction 'Bundle-DocURL', 'http://www.mycompany.com'
+    }
+}
+task fooJar(type: Jar) {
+    manifest = osgiManifest {
+        instruction 'Bundle-Vendor', 'MyCompany'
+    }
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'loop'
+
+include 'loop-common'
+include 'loop-client'
+include 'loop-server'
